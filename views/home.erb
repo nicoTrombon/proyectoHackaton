@@ -1,0 +1,11 @@
+<div class="container">
+  <% albums.each do |album| %>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <a href="/album/<%= topic.id %>"><%= album.title %></a>
+        <img src="<% album.img_url %>">
+      </div>
+    </div>  
+  <% end %>
+
+</div>
