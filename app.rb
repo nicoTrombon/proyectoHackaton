@@ -13,6 +13,6 @@ Ohm.redis = Redic.new("redis://127.0.0.1:6379")
 Cuba.define do
   @page = {}
   on root do
-    res.write (view("home", albums: Album[2]))
+    res.write (view("home", albums: Album.all))
   end
 end
