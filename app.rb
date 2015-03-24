@@ -8,6 +8,7 @@ require_relative "models/artist"
 Cuba.plugin(Cuba::Render)
 Cuba.use Rack::Session::Cookie, secret: "foobar"
 
+#connection to Redis Labs
 Ohm.redis = Redic.new(ENV["REDIS_URL"])
 
 Cuba.define do
